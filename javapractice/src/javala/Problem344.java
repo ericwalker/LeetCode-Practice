@@ -1,3 +1,5 @@
+
+
 package javala;
 
 import java.util.*;
@@ -17,5 +19,10 @@ public class Problem344 {
 		}
 
 		System.out.print(s);
+	}
+
+	private char[] getInputString()
+	{
+
 	}
 }
