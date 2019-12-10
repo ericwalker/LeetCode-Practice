@@ -1,6 +1,6 @@
 package javala;
 
-class Problem338 {
+class Problem338Sol1 {
     public int[] countBits(int num) {
 
         int[] result = new int[num+1];
@@ -21,8 +21,12 @@ class Problem338 {
             }
             result[i] += 1;
 
-            int times = i;
-            // while (2*i<)
+            int multi = i;
+            while (2*multi<=num)
+            {
+                multi = multi * 2;
+                result[multi] = result[i];
+            }
         }
 
         return result;
