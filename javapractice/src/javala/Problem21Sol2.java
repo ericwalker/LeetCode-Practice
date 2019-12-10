@@ -35,9 +35,7 @@ class Problem21Sol2 {
                 result.next = mergeTwoLists(l1,l2.next);
             }
         }
-
-
-
+        
         return result;
     }
 }
