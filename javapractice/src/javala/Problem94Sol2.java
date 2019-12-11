@@ -1,3 +1,4 @@
+// brilliant iterative solution
 package javala;
 
 /**

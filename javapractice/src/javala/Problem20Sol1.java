@@ -1,6 +1,6 @@
 package javala
 
-class Problem20 {
+class Problem20Sol1 {
     public boolean isValid(String s) {
 
         Stack<Character> stack = new Stack<Character>();

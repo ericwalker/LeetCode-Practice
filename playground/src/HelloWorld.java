@@ -1,19 +1,25 @@
+import java.util.List;
+import java.util.ArrayList;
+
 public class HelloWorld {
 
     public static void main(String[] args) {
-        int x = 0;
-        String str = "Hello1 World";
-        System.out.println(x);
-        System.out.println(str);
+        
 
-        for (int i = 0; i < str.length(); i++)
+        // 4,3,2,7,8,2,3,1
+        // -1
+        // 3,2,1,6,7,1,2,0
+        // nums[nums[i] -1] = -nums[nums[i]-1]
+
+        // 1,2,3,4,2,6,7,8
+        int[] nums = new int[]{4,3,2,7,8,2,3,1};
+        
+        for (int i = 0; i < nums.length; i++)
         {
-            if (Character.isDigit(str.charAt(i)))
-                System.out.println(str.charAt(i));
-            else
-                System.out.println("fail");
-//            System.out.println(str.charAt(i));
-//            System.out.println(str.substring(i,i+1));
+            tempArray[nums[i]] = nums[i];
         }
+
+
+
     }
 }
