@@ -8,7 +8,7 @@ package javala;
  *     ListNode(int x) { val = x; }
  * }
  */
-class Problem206 {
+class Problem206SolRecu {
     public ListNode reverseList(ListNode head) {
 
         if (head == null)
