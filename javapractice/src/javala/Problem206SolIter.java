@@ -17,6 +17,14 @@ class Problem206SolIter {
         ListNode result = new ListNode(head.val);
         ListNode cur = head;
 
-        return reverseList(ListNode head.next);
+        while (cur.next != null)
+        {
+            ListNode newNode = new ListNode(cur.next.val);
+            newNode.next = result;
+            result = newNode;
+            cur = cur.next;
+        }
+
+        return result;
     }
 }
