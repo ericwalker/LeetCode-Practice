@@ -21,7 +21,7 @@ class Problem46SolRecu {
         for (int i = 0; i < numList.size(); i++) // decide the first element
         {
             List<Integer> tempNumList = new ArrayList<>(numList); // <-- to reset numList
-            List<Integer> newElement = new ArrayList<>(curElement); // <-- 
+            List<Integer> newElement = new ArrayList<>(curElement); // <--
 
             newElement.add(numList.get(i));
             tempNumList.remove(i);
