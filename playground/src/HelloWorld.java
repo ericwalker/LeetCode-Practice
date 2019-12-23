@@ -6,31 +6,19 @@ import java.util.Arrays;
 public class HelloWorld {
 
     public static void main(String[] args) {
+        String haystack = "hello";
+        String needle = "ll";
 
-        int[] numbers = new int[]{1,2,3};
-        List<Integer> numList = new ArrayList<Integer>(numbers.length);
-        for (int val: numbers)
-            numList.add(val);
+        if (needle.length() == 0)
+            System.out.println(0);
 
-        List<List<Integer>> resultList = new ArrayList<List<Integer>>();
-        List<Integer> resultElement = new ArrayList<Integer>();
-
-        findElement(numList, resultList, resultElement);
-
-        System.out.println(numList);
-
-    }
-
-    public static List<List<Integer>> findElement (List<Integer> list, List<List<Integer>> resultList, List<Integer> curElement)
-    {
-        for (int i = 0; i < list.size(); i++) // decide the first element
-        {
-            ArrayList<Integer> newElement = new ArrayList<Integer>();
-            newElement.add(list.get(i));
-            list.remove(i);
-            findElement (list, resultList, newElement);
+        for (int i = 0; i <= haystack.length() - needle.length(); i++) {
+            if (needle.equals(haystack.substring(i, i + needle.length()))) {
+                System.out.println(i);
+                break;
+            }
         }
 
-        return
+        System.out.println(-1);
     }
 }
