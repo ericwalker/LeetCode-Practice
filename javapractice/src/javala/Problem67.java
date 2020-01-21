@@ -11,12 +11,12 @@ class Solution {
             int sum = carry;
             if (curA >= 0)
             {
-                sum = sum + a.charAt(curA)-'0';
+                sum = sum + a.charAt(curA)-'0'; // <== fast way to transfer char to int
                 curA--;
             }
             if (curB >= 0)
             {
-                sum = sum + b.charAt(curB)-'0';
+                sum = sum + b.charAt(curB)-'0'; // <==
                 curB--;
             }
 
