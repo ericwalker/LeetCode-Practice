@@ -1,10 +1,15 @@
+import javafx.beans.binding.When;
+
 public class HelloWorld {
 
     public static void main(String[] args) {
-        int a = 1;
-        int b = 1;
-        int c = 1;
-        System.out.println(a^b^c);
 
+        StringBuilder sb = new StringBuilder();
+        int inum = 0;
+        char ch = '3';
+        String str = "2";
+        sb.append(inum).append(ch).append(str);
+
+        System.out.println(sb.toString());
     }
 }
