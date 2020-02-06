@@ -9,6 +9,7 @@
  *     }
  * }
  */
+// Use two pointers to solve it
 public class Solution {
     public boolean hasCycle(ListNode head) {
 
