@@ -36,7 +36,7 @@ public class HelloWorld {
         }
 
         System.out.println (score);
-        return numsList.get(2);
+        return numsList.get(2);ff
     }
 
 }
