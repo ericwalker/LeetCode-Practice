@@ -16,12 +16,9 @@ class Node {
     }
 };
 */
-
-// Recursive solution
 class Solution {
+    List<Integer> resultList = new ArrayList<Integer>();
     public List<Integer> preorder(Node root) {
-
-        List<Integer> resultList = new ArrayList<Integer>();
 
         if (root == null)
             return resultList;
@@ -29,18 +26,8 @@ class Solution {
         resultList.add (root.val);
 
         for (Node ele : root.children)
-            helper(resultList, ele);
+            preorder(ele);
 
         return resultList;
-    }
-
-    public List<Integer> helper (List<Integer> list, Node newNode)
-    {
-        list.add (newNode.val);
-
-        for (Node ele : newNode.children)
-            helper(list, ele);
-
-        return list;
     }
 }
